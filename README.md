@@ -5,7 +5,6 @@
 # STORM HEX EDITOR
 
 **Профессиональный HEX-редактор для анализа и модификации бинарных файлов**
-**Professional HEX editor for binary file analysis and modification**
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 [![PyQt6](https://img.shields.io/badge/PyQt6-6.0+-green.svg)](https://pypi.org/project/PyQt6/)
