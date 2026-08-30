@@ -1,65 +1,35 @@
-<div align="center">
+# STORM HEX EDITOR
 
-<img src="logo.png" width="128" height="128" alt="STORM HEX EDITOR Logo" />
+## **О проекте**
+STORM HEX EDITOR — высокоскоростной шестнадцатеричный редактор файлов произвольного объема (включая файлы размером сотни гигабайт) с использованием технологии виртуализации памяти и Memory-Mapped Files. Включает структурированные шаблоны бинарных форматов, поиск по шаблонам и шестнадцатеричный калькулятор.
 
-# ⚡ STORM HEX EDITOR
+## **Происхождение и форки**
+Оригинальная разработка ReiKatari.
 
-<p align="center">
-  <b>Шестнадцатеричный редактор файлов и дампов памяти с анализом структуры данных.</b>
-</p>
+## **Технологический стек**
+- **Языки программирования**: C# (.NET 9.0), C++
+- **Интерфейс**: WPF, XAML, Аппаратно-ускоренный виртуализированный Hex Grid
+- **Файловые операции**: Memory-Mapped Files (MMF), 64-битная адресация смещений
 
-[![Version](https://img.shields.io/badge/version-1.0.0-00D2FF.svg?style=for-the-badge)](https://github.com/ReiKatari/STORM_HEX_EDITOR)
-[![Platform](https://img.shields.io/badge/Platform-Windows%2011%20%7C%2010-0EA5E9.svg?style=for-the-badge)](https://github.com/ReiKatari/STORM_HEX_EDITOR)
-[![Publisher](https://img.shields.io/badge/Publisher-STORM%20TEAM-10B981.svg?style=for-the-badge)](https://github.com/ReiKatari)
-[![Developer](https://img.shields.io/badge/Author-ReiKatari-F59E0B.svg?style=for-the-badge)](https://github.com/ReiKatari)
-[![Signed](https://img.shields.io/badge/Security-SHA256%20Signed-10B981.svg?style=for-the-badge)](https://github.com/ReiKatari)
+## **Ключевые возможности**
+- **Мгновенное открытие файлов любого размера**: Без загрузки всего файла в оперативную память.
+- **Продвинутый поиск и замена**: Поиск по Hex-байтам, тексту в кодировках UTF-8/ASCII/Unicode, регулярным выражениям и маскам.
+- **Инспектор структур данных**: Автоматический разбор типов (int8, int16, int32, int64, float, double, little/big endian).
+- **Сравнение бинарных файлов**: Встроенный режим наложения и выявления различий (Diff).
 
-</div>
+## **Поддерживаемые платформы и эмуляторы**
+- **Операционные системы**: Windows 10, Windows 11 (x64)
 
----
+## **Установка и запуск**
+1. Скачайте установщик или Portable-версию из **Releases**.
+2. Запустите `STORM HEX EDITOR.exe`.
 
-## 🌟 О проекте / Overview
+## **Безопасность и цифровые подписи**
+Сборка подписана сертификатом **CN=STORM SOFT, O=STORM EDEN** (SHA-256 Authenticode).
 
-**STORM HEX EDITOR** — компонент программного комплекса **STORM**, разработанный с упором на максимальную производительность, современный дизайн и надёжность.
+## **Авторы и лицензия**
+- **Автор проекта**: ReiKatari
+- **Лицензия**: MIT License
 
-* **Версия:** $ver
-* **Издатель:** STORM TEAM
-* **Ведущий разработчик:** ReiKatari
-* **Технологический стек:** $tech
-
----
-
-## 🚀 Установка / Installation
-
-Установка производится через единый инсталлятор **STORM INSTALLER**:
-
-1. Запустите файл STORM_STORM_HEX_EDITOR_1.0.0_Setup.exe.
-2. Выберите режим:
-   * **Стандартная установка** — установка в C:\Program Files\STORM HEX EDITOR с созданием ярлыков и регистрацией в системе.
-   * **Портативная версия** — распаковка в любую выбранную папку без изменения реестра.
-3. Опция автоматической регистрации доверенного сертификата STORM TEAM исключает предупреждения SmartScreen и Smart App Control.
-
----
-
-## 🛡️ Безопасность и Цифровая подпись / Code Signing
-
-Все исполняемые файлы и инсталляторы подписаны сертификатом **STORM TEAM** с использованием хэширования SHA-256 и RFC 3161 Timestamping.
-
-* Для ручной установки сертификата в хранилище доверенных корневых центров запустите:
-  Files\Разблокировать_И_Установить_Сертификат.bat от имени Администратора.
-
----
-
-## 📁 Структура репозитория / Structure
-
-* Assembling/ — скомпилированные релизные бинарные файлы и зависимости программы.
-* Files/ — инсталлятор, сертификат STORM_Certificate.cer и сервисные скрипты.
-* Sources/ — исходный код решения.
-
----
-
-## 👥 Авторы и Лицензия / Credits
-
-* **Разработчик:** [ReiKatari](https://github.com/ReiKatari)
-* **Издатель:** **STORM TEAM**
-* © 2026 STORM TEAM. Все права защищены.
+## **Благодарности**
+- **Разработчики открытых Hex-компонентов** — за идеи эффективной визуализации дампов.
